@@ -29,6 +29,11 @@
 
 ---
 
+- Theme: Gruvbox
+- Theme: Gruvbox Material
+- Font: FiraCode NerdFont Mono
+- Font: JetBrains NerdFont Mono
+
 ## Screenshots
 
 <p align="center">
