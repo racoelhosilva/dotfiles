@@ -38,15 +38,15 @@
 #keystate_scrolllock= enable
 
 # Increase volume
-"pactl set-sink-volume @DEFAULT_SINK@ +655"
+"pulseaudio-ctl up 1%"
    XF86AudioRaiseVolume
 
 # Decrease volume
-"pactl set-sink-volume @DEFAULT_SINK@ -655"
+"pulseaudio-ctl down 1%"
    XF86AudioLowerVolume
 
 # Mute volume
-"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+"pulseaudio-ctl mute"
    XF86AudioMute
 
 # Increase Screen Brightness
@@ -56,6 +56,10 @@
 # Decrease Screen Brightness
 "brightnessctl --min-value=960 -d "intel_backlight" s 9%-"
    XF86MonBrightnessDown
+
+# Screenshot
+"cd ~/Pictures/Screenshots && scrot"
+   Print
 
 ##################################
 # End of xbindkeys configuration #
